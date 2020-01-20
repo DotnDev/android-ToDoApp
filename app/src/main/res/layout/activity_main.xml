@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Main Activity with a title, a RecyclerView (listing all tasks)
+and an EditText to add new tasks -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/mainactivity_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="@string/app_name"
+            android:textSize="@dimen/textsize_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mainactivity_todoname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainactivity_title_txt"
+            android:layout_margin="@dimen/margin_normal"
+            android:text=""
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/mainactivity_title_txt"
+            android:layout_margin ="@dimen/margin_small" />
+
+
+        <EditText
+            android:id="@+id/mainactivity_newtask_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_small"
+            android:padding="10dp"
+            android:scrollHorizontally="false"
+            android:maxLines="1"
+            android:hint="@string/newtask_hint"
+            android:background="#E8ECE8"
+            />
+
+        <ImageButton
+            android:id="@+id/mainactivity_newtask_save_imgbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_save"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_small"
+            android:padding="10dp"
+
+                />
+
+
+
+</RelativeLayout>

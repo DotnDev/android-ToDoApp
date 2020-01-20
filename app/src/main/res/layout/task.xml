@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Each task will show in the RecyclerView
+ FrameLayout for the swipe to delete function (foreground in white +
+ background in red showing when swiping)
+ RadioButton to complete the task
+ Tap the task to edit -->
+
+<FrameLayout
+    android:id="@+id/recyclerview_fl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="@dimen/margin_normal">
+
+    <RelativeLayout
+        android:id="@+id/recyclerview_background__rl"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@android:color/holo_red_dark"
+
+        >
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recyclerview_foreground_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="18dp"
+        >
+
+
+    <RadioButton
+        android:id="@+id/task_radiobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@id/recyclerview_taskname_et"
+        />
+
+    <EditText
+        android:id="@+id/recyclerview_taskname_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/task_radiobtn"
+        android:layout_toRightOf="@id/task_radiobtn"
+        android:textSize="20sp"
+        android:background="@android:color/transparent"
+        android:cursorVisible="false"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
