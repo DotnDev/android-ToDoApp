@@ -1,5 +1,5 @@
 # android-ToDoApp
-A TodoList app with a swipe-to-delete function
+A TodoList app with a swipe-to-delete function [DEVELOPMENT ON-GOING]
 
 Installation
 
